@@ -46,7 +46,8 @@ const Donate = () => {
         }
 
         try {
-            const response = await fetch('/api/donate', {
+            const apiBase = import.meta.env.VITE_API_BASE || '/api';
+            const response = await fetch(`${apiBase.replace(/\/$/, '')}/donate`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

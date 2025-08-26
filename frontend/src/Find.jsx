@@ -49,7 +49,8 @@ const Find = () => {
     const fetchDonations = async () => {
       try {
         setLoading(true);
-        const res = await fetch('/api/donations');
+        const apiBase = import.meta.env.VITE_API_BASE || '/api';
+        const res = await fetch(`${apiBase.replace(/\/$/, '')}/donations`);
         if (!res.ok) {
           const err = await res.json().catch(() => ({ message: 'Failed to load donations' }));
           throw new Error(err.message || 'Failed to load donations');
