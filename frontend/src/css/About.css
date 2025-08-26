@@ -1,0 +1,129 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fafafa 0%, #f0fdf4 100%);
+  padding: 2rem;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.about-hero {
+  padding: 2.5rem 2rem;
+  background: linear-gradient(120deg, rgba(16,185,129,0.12) 0%, rgba(59,130,246,0.12) 100%);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(135deg, #10b981 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  color: #374151;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.about-content {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+}
+
+.about-text p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.about-contact {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.contact-title {
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mailto-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mailto-link:hover {
+  text-decoration: underline;
+}
+
+.copy-button {
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.copy-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.about-footer {
+  padding: 1.25rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.back-home {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(99,102,241,0.35);
+}
+
+.back-home:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
