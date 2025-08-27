@@ -9,7 +9,7 @@ import About from './About.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <Router basename={import.meta.env.BASE_URL || '/'}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/find" element={<Find />} />
